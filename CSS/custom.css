@@ -130,6 +130,21 @@ div.show+.theme-change {
 
 }
 
+.tech {
+  margin-bottom: 2px;
+}
+
+.tech h6 {
+  color: var(--dark-theme-white-primary);
+}
+
+.project-btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
 .footer-nav {
   flex-direction: row;
   width: 100%;
