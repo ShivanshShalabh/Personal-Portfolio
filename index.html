@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div id="signature-div">
+    <!-- <div id="signature-div">
       <svg
         id="signature"
         width="568"
@@ -120,7 +120,7 @@
         document.body.removeAttribute("style");
         type_word();
       }, 5500);
-    </script>
+    </script> -->
 
     <header class="header fixed-top header--sticky" id="header">
       <div class="container" style="animation-delay: 0.1s">
@@ -230,7 +230,10 @@
     </section>
     <section class="section section--border-bottom" id="achievement-section">
       <div class="row">
-        <div class="col-12 container">
+        <div
+          class="col-12 container achievement-container inactive"
+          id="achievement-container"
+        >
           <h2><i class="fa-solid fa-award"></i>&nbsp; Achievements</h2>
           <div class="col-12 mb-4 mb-sm-0">
             <div class="achievement">
@@ -250,43 +253,11 @@
           <div class="col-12 mb-4 mb-sm-0">
             <div class="achievement">
               <div class="achievement__date">2022</div>
-              <div class="achievement__title">Top 50 Changemakers in India</div>
+              <div class="achievement__title">Top 50 Changemakers of India</div>
               <div class="achievement__degree text-justify">
                 I was among the top 50 changemakers out of the FEELL top 150
                 changemakers in the country. I advanced directly to the second
                 stage of FEELL fellowship cohort competition because of this.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mb-4 mb-sm-0">
-            <div class="achievement">
-              <div class="achievement__date">2022</div>
-              <div class="achievement__title">
-                Featured in FEELL 150 Changemakers
-              </div>
-              <div class="achievement__degree text-justify">
-                The FEELL 150 changemakers are exclusively leaders of social
-                enterprises/non-profits & other social community initiatives
-                between the ages of 15-18 who have driven significant impact in
-                their local communities and thus have demonstrated leadership
-                potential at a young age. They have been handpicked by our
-                esteemed Global Council for Impact Leadership out of thousands
-                of potential candidates across India, to carry forward the baton
-                in impact leadership.
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mb-4 mb-sm-0">
-            <div class="achievement">
-              <div class="achievement__date">2021</div>
-              <div class="achievement__title">
-                Winner of General Track HackJA Spring 2021
-              </div>
-              <div class="achievement__degree">
-                HackJA is a biannual hackathon conducted by Junior Achievements,
-                New Jersey. In this 48 hours long hackathon, high school
-                students from all over the globe participated and created a
-                real-life solution.
               </div>
             </div>
           </div>
@@ -306,6 +277,21 @@
               </div>
             </div>
           </div>
+          <div class="col-12 mb-4 mb-sm-0">
+            <div class="achievement">
+              <div class="achievement__date">2021</div>
+              <div class="achievement__title">
+                Winner of General Track HackJA Spring 2021
+              </div>
+              <div class="achievement__degree">
+                HackJA is a biannual hackathon conducted by Junior Achievements,
+                New Jersey. In this 48 hours long hackathon, high school
+                students from all over the globe participated and created a
+                real-life solution.
+              </div>
+            </div>
+          </div>
+
           <div class="col-12 mb-4 mb-sm-0">
             <div class="achievement">
               <div class="achievement__date">2021</div>
@@ -354,6 +340,24 @@
                 organized by PSN Hack Club- Pathways School Noida. I, with my
                 team, created a web app to improve the hybrid learning
                 experience for students and teachers.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-4 mb-sm-0">
+            <div class="achievement">
+              <div class="achievement__date">2022</div>
+              <div class="achievement__title">
+                Featured in FEELL 150 Changemakers
+              </div>
+              <div class="achievement__degree text-justify">
+                The FEELL 150 changemakers are exclusively leaders of social
+                enterprises/non-profits & other social community initiatives
+                between the ages of 15-18 who have driven significant impact in
+                their local communities and thus have demonstrated leadership
+                potential at a young age. They have been handpicked by our
+                esteemed Global Council for Impact Leadership out of thousands
+                of potential candidates across India, to carry forward the baton
+                in impact leadership.
               </div>
             </div>
           </div>
@@ -440,6 +444,13 @@
                 and 85%+ in each subject.
               </div>
             </div>
+          </div>
+          <div class="view-more" id="drop-down-achievement">
+            <span id="drop-down-achievement-icon-txt"> View More</span>
+            <i
+              class="fa-solid fa-angle-down"
+              id="drop-down-achievement-icon"
+            ></i>
           </div>
         </div>
       </div>
@@ -832,5 +843,6 @@
         mirror: false,
       });
     </script>
+    <script src="JS/dropdown.js"></script>
   </body>
 </html>
