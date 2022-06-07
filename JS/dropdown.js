@@ -6,11 +6,31 @@ const achievementButtonTxt = document.getElementById(
 );
 
 achievemntDropdown.addEventListener("click", () => {
+  achievementContainer.scrollIntoView({ behavior: "smooth" });
   achievementContainer.classList.toggle("inactive");
   achievementButton.classList.toggle("rotate");
   achievementButtonTxt.innerText =
     achievementButtonTxt.innerText.trim().toLowerCase().replace(" ", "") ===
-    "viewmore"
+      "viewmore"
       ? "View Less"
       : "View More";
+});
+
+
+const projectDropdown = document.getElementById("drop-down-project");
+const projectContainer = document.getElementById("project-container");
+const projectButton = document.getElementById("drop-down-project-icon");
+const projectButtonTxt = document.getElementById(
+  "drop-down-project-icon-txt"
+);
+
+projectDropdown.addEventListener("click", () => {
+  projectContainer.classList.toggle("inactive");
+  projectButton.classList.toggle("rotate");
+  projectButtonTxt.innerText =
+    projectButtonTxt.innerText.trim().toLowerCase().replace(" ", "") ===
+      "viewmore"
+      ? "View Less"
+      : "View More";
+  projectContainer.scrollIntoView({ behavior: "smooth" });
 });

@@ -168,7 +168,7 @@ footer ul {
   font-size: 2rem;
 }
 
-.achievement-container.inactive .view-more {
+.inactive .view-more {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -210,6 +210,65 @@ footer ul {
   width: fit-content;
   padding: 10px 20px;
   color: var(--dark-theme-white-primary);
+}
+
+#projects .container>div:last-child {
+  margin-bottom: 20px;
+}
+
+#project-container {
+  max-height: 100000px;
+}
+
+
+#project-container.inactive>div:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+#project-container.inactive>div:nth-child(n+5) {
+  display: none;
+}
+
+
+.download-btns-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 35px 0;
+
+}
+
+.download-portfolio {
+  border: 2px solid #00b9e2;
+  color: white;
+  padding: 7.5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 10px 5px;
+  background: transparent;
+  transition: all 1s ease-in-out;
+}
+
+.download-portfolio a:hover i {
+  animation: up-down 1s infinite;
+}
+
+.download-portfolio a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+section#projects {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 992px) {
@@ -357,6 +416,11 @@ h1 span {
   .landing {
     height: fit-content;
   }
+
+  h4 {
+    font-size: 1.35rem;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -369,6 +433,10 @@ h1 span {
 
   .roles-blob {
     width: 80vw;
+  }
+
+  h4 {
+    font-size: 1.3rem;
   }
 }
 
@@ -391,4 +459,18 @@ h1 span {
     max-width: 75%;
   }
 
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+
+  100% {
+    transform: translateY(-2px);
+  }
 }

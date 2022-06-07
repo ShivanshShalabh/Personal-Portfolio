@@ -147,6 +147,9 @@
                 <a class="nav-link" href="#about">ABOUT</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#resume">RESUME</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#achievement-section">achievements</a>
               </li>
               <li class="nav-item">
@@ -200,7 +203,7 @@
         <img src="./Images/Roles/technopreneur.svg" alt="SVG Illustration" />
       </div>
     </section>
-    <section class="section pb-0" id="about">
+    <section class="section pb-0 section--border-bottom" id="about">
       <div class="container">
         <div class="row d-flex flex-md-row about__profile">
           <div class="col-12 col-md-6 my-auto my-auto" data-aos="slide-right">
@@ -225,6 +228,25 @@
               alt="Profile Picture"
             />
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="section pb-0 section--border-bottom" id="resume">
+      <div class="container">
+        <h2><i class="fa-solid fa-file"></i>&nbsp; Resume</h2>
+        <div class="download-btns-div">
+          <h4 class="download-portfolio" data-aos="zoom-in" data-os-offset="20">
+            <a href="Assets/Resume/CS CV.pdf" download="Shivansh Shalabh CS Resume">
+              CS Resume &nbsp;
+              <i class="fa-solid fa-download"></i>
+            </a>
+          </h4>
+          <h4 class="download-portfolio" data-aos="zoom-in" data-os-offset="20">
+            <a href="Assets/Resume/Innovator CV.pdf" download="Shivansh Shalabh Innovator Resume">
+              Innovator Resume &nbsp;
+              <i class="fa-solid fa-download"></i>
+            </a>
+          </h4>
         </div>
       </div>
     </section>
@@ -456,7 +478,7 @@
       </div>
     </section>
     <section id="projects" class="section pb-0" data-aos="zoom-in">
-      <div class="container">
+      <div class="container inactive" id="project-container">
         <h2><i class="fa-solid fa-code-branch"></i>&nbsp; Projects</h2>
         <div class="row row--padded">
           <div
@@ -598,36 +620,7 @@
             </div>
           </div>
         </div>
-        <div class="row row--padded">
-          <div class="col-12 col-md-7 pl-md-0 project-img">
-            <img
-              class="img-responsive"
-              src="Images/Portfolio.svg"
-              alt="Project Illustration"
-            />
-          </div>
-          <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto project-div">
-            <h3>Portfolio</h3>
-            <p class="lead">
-              I have created this portfolio using the open-source personal
-              website template, Raditian Free Hugo Theme, available under an MIT
-              license. Keeping the basic skeleton, I have completely customized
-              the website with custom graphics & sections.
-            </p>
-            <div class="tech">
-              <h6>Languages/ Technologies:</h6>
-              <span class="project-langs">HTML, CSS and JS</span>
-            </div>
-            <div class="project-btns">
-              <a
-                href="https://github.com/ShivanshShalabh/Personal-Portfolio"
-                target="_blank"
-                class="btn btn-primary project-link-btn"
-                >GitHub &ThickSpace; <i class="fa-solid fa-code-branch"></i
-              ></a>
-            </div>
-          </div>
-        </div>
+
         <div class="row row--padded">
           <div class="col-12 col-md-7 pl-md-0 project-img">
             <img
@@ -654,6 +647,36 @@
             <div class="project-btns">
               <a
                 href="https://github.com/ShivanshShalabh/Role-Assigner-Discord-Bot"
+                target="_blank"
+                class="btn btn-primary project-link-btn"
+                >GitHub &ThickSpace; <i class="fa-solid fa-code-branch"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row row--padded">
+          <div class="col-12 col-md-7 pl-md-0 project-img">
+            <img
+              class="img-responsive"
+              src="Images/Portfolio.svg"
+              alt="Project Illustration"
+            />
+          </div>
+          <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto project-div">
+            <h3>Portfolio</h3>
+            <p class="lead">
+              I have created this portfolio using the open-source personal
+              website template, Raditian Free Hugo Theme, available under an MIT
+              license. Keeping the basic skeleton, I have completely customized
+              the website with custom graphics & sections.
+            </p>
+            <div class="tech">
+              <h6>Languages/ Technologies:</h6>
+              <span class="project-langs">HTML, CSS and JS</span>
+            </div>
+            <div class="project-btns">
+              <a
+                href="https://github.com/ShivanshShalabh/Personal-Portfolio"
                 target="_blank"
                 class="btn btn-primary project-link-btn"
                 >GitHub &ThickSpace; <i class="fa-solid fa-code-branch"></i
@@ -795,6 +818,10 @@
           </div>
         </div>
       </div>
+      <div class="view-more" id="drop-down-project">
+        <span id="drop-down-project-icon-txt"> View More</span>
+        <i class="fa-solid fa-angle-down" id="drop-down-project-icon"></i>
+      </div>
     </section>
     <footer class="footer">
       <div class="container">
@@ -805,6 +832,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">RESUME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#achievement-section">achievements</a>
