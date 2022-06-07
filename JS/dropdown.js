@@ -5,15 +5,15 @@ const achievementButtonTxt = document.getElementById(
   "drop-down-achievement-icon-txt"
 );
 
+let achievementToggle = false;
 achievemntDropdown.addEventListener("click", () => {
-  achievementContainer.scrollIntoView({ behavior: "smooth" });
+  achievementToggle = !achievementToggle;
+  if (!achievementToggle) achievementContainer.scrollIntoView({ behavior: "smooth" });
   achievementContainer.classList.toggle("inactive");
   achievementButton.classList.toggle("rotate");
-  achievementButtonTxt.innerText =
-    achievementButtonTxt.innerText.trim().toLowerCase().replace(" ", "") ===
-      "viewmore"
-      ? "View Less"
-      : "View More";
+  achievementButtonTxt.innerText = achievementToggle
+    ? "View Less"
+    : "View More";
 });
 
 
@@ -24,13 +24,14 @@ const projectButtonTxt = document.getElementById(
   "drop-down-project-icon-txt"
 );
 
+let projectToggle = false;
+
 projectDropdown.addEventListener("click", () => {
+  projectToggle = !projectToggle;
   projectContainer.classList.toggle("inactive");
   projectButton.classList.toggle("rotate");
-  projectButtonTxt.innerText =
-    projectButtonTxt.innerText.trim().toLowerCase().replace(" ", "") ===
-      "viewmore"
-      ? "View Less"
-      : "View More";
-  projectContainer.scrollIntoView({ behavior: "smooth" });
+  projectButtonTxt.innerText = projectToggle ? "View Less" : "View More";
+  if (!projectToggle) projectContainer.scrollIntoView({ behavior: "smooth" });
+
+
 });

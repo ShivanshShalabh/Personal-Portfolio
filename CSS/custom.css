@@ -216,9 +216,6 @@ footer ul {
   margin-bottom: 20px;
 }
 
-#project-container {
-  max-height: 100000px;
-}
 
 
 #project-container.inactive>div:nth-child(4) {
@@ -226,7 +223,10 @@ footer ul {
 }
 
 #project-container.inactive>div:nth-child(n+5) {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -239,10 +239,20 @@ footer ul {
   margin: 35px 0;
 
 }
+.download-btns-div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 5px;
+}
+.download-btns-div div img{
+  max-height: 300px;
 
+}
 .download-portfolio {
-  border: 2px solid #00b9e2;
-  color: white;
+  border-bottom: 3px solid var(--dark-theme-white-tertiary);  
+  color: var(--dark-theme-white-primary);
   padding: 7.5px 15px;
   border-radius: 15px;
   cursor: pointer;
@@ -256,7 +266,7 @@ footer ul {
 }
 
 .download-portfolio a:hover {
-  color: white;
+  color: var(--dark-theme-white-primary);
   text-decoration: none;
 }
 
