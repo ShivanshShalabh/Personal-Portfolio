@@ -261,7 +261,7 @@ footer ul {
   transition: all 1s ease-in-out;
 }
 
-.download-portfolio a:hover i {
+.download-portfolio a i {
   animation: up-down 1s infinite;
 }
 
