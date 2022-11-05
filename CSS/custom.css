@@ -484,3 +484,11 @@ h1 span {
     transform: translateY(-2px);
   }
 }
+
+.recommendor{
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: right;
+  filter: brightness(.75);
+}
