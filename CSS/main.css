@@ -12112,7 +12112,7 @@ textarea:focus {
 @media (min-width: 992px) {
   .section {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 
   .section .row.row--padded {
@@ -12164,7 +12164,7 @@ textarea:focus {
 
 .section--cta {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   background-color: #000;
   color: #fff;
 }
