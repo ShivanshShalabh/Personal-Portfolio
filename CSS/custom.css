@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Josefin+Sans:wght@300&family=Marck+Script&family=Montserrat&family=Mukta:wght@300&family=Nunito+Sans&family=Open+Sans:wght@300&family=Oxygen:wght@300&family=Quicksand&display=swap');
 
-
 * {
   transition: all 0.35s ease-in;
 }
@@ -197,7 +196,6 @@ footer ul {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-
 .view-more {
   margin: auto;
   border-radius: 20px;
@@ -216,8 +214,6 @@ footer ul {
   margin-bottom: 20px;
 }
 
-
-
 #project-container.inactive>div:nth-child(4) {
   margin-bottom: 20px;
 }
@@ -229,7 +225,6 @@ footer ul {
   margin: 0;
 }
 
-
 .download-btns-div {
   display: flex;
   align-items: center;
@@ -238,6 +233,7 @@ footer ul {
   width: 100%;
 
 }
+
 .download-btns-div div {
   display: flex;
   flex-direction: column;
@@ -245,12 +241,14 @@ footer ul {
   justify-content: center;
   margin: 10px 5px;
 }
-.download-btns-div div img{
+
+.download-btns-div div img {
   max-height: 300px;
 
 }
+
 .download-portfolio {
-  border-bottom: 3px solid var(--dark-theme-white-tertiary);  
+  border-bottom: 3px solid var(--dark-theme-white-tertiary);
   color: var(--dark-theme-white-primary);
   padding: 7.5px 15px;
   border-radius: 15px;
@@ -268,8 +266,6 @@ footer ul {
   color: var(--dark-theme-white-primary);
   text-decoration: none;
 }
-
-
 
 h4 {
   font-size: 1.5rem;
@@ -341,7 +337,6 @@ span.project-langs,
   letter-spacing: 0.75px;
 }
 
-
 nav,
 footer {
   font-family: 'Quicksand', sans-serif;
@@ -357,8 +352,8 @@ h1 span {
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-
   height: 100vh;
+  height: 100dvh;
   padding-top: 100px;
 }
 
@@ -383,7 +378,6 @@ h1 span {
   margin: auto;
 }
 
-
 .quote span.align-right {
   width: 100%;
   text-align: right;
@@ -403,7 +397,6 @@ h1 span {
 .text-typing-animation {
   text-align: center;
 }
-
 
 @media (max-width: 992px) {
   .quote {
@@ -451,7 +444,6 @@ h1 span {
 
 @media (min-width: 768px) {
 
-
   .about__profile {
     display: flex;
     flex-direction: column;
@@ -459,7 +451,6 @@ h1 span {
     justify-content: center;
     width: 100%;
     height: 100%;
-
 
   }
 
@@ -484,7 +475,7 @@ h1 span {
   }
 }
 
-.recommendor{
+.recommendor {
   display: block;
   margin: auto;
   width: 100%;
