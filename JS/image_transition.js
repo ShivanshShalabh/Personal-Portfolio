@@ -1,5 +1,5 @@
 let rolesImgElems = document.querySelectorAll('.roles-blob img')
-let rolesImages = ['web_developer.svg', 'technopreneur.svg','competetive_coder.svg','poet.svg','karate.svg']
+let rolesImages = ['web_developer.svg', 'technopreneur.svg','competetive_coder.svg']
 let roleImageCounter = 1;
 let roleImgSrcPath = rolesImgElems[0].getAttribute('data-img-src')
 const changeRoleImage = () => {
