@@ -482,3 +482,10 @@ h1 span {
   text-align: right;
   filter: brightness(.75);
 }
+
+.navbar button{
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: auto;
+}

@@ -28,3 +28,4 @@ function type_word() {
     }else    setTimeout(type_word, 300);
 }
 
+type_word()
