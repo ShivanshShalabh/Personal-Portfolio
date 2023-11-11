@@ -21,11 +21,11 @@ function type_word() {
             changeRoleImage();
             setTimeout(type_word, 100)
         } else
-        setTimeout(type_word, 600)
+        setTimeout(type_word, 500)
 
         cursor.style.animationName = "";
         isForward = !isForward;
-    }else    setTimeout(type_word, 300);
+    }else    setTimeout(type_word, 100);
 }
 
 type_word()
