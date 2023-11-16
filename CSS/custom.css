@@ -489,3 +489,9 @@ h1 span {
   background: transparent;
   margin-left: auto;
 }
+
+.recommendations-div{
+  
+  row-gap: 30px;
+  
+}
